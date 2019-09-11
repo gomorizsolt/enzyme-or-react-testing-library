@@ -2,7 +2,7 @@
 
 ## Aim
 
-We have been using Enzyme since the beginning to test React components seamlessly. However, as of the appearance of hooks, Enzyme has yet to solve essential issues, e.g. `useEffect` cannot be triggered with shallow rendering([#2086](https://github.com/airbnb/enzyme/issues/2086)). As a result, and also based upon other thoughts and recommendations, we have decided to shelve Enzyme for a while until we find out how RTL works.
+We have been using Enzyme since the beginning to test React components seamlessly. However, as of the appearance of hooks, Enzyme has yet to solve essential issues, e.g. `useEffect` cannot be triggered with shallow rendering([#2086](https://github.com/airbnb/enzyme/issues/2086)). As a result, and also based upon other thoughts and recommendations, we have decided to shelve Enzyme for a while and find out how RTL's concept affect unit testing.
 
 ## Resources
 
