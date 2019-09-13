@@ -1,12 +1,13 @@
 # Enzyme vs RTL
 
 - :heavy_check_mark: [Basic stuff](https://github.com/gomorizsolt/enzyme-vs-rtl/tree/master/src/components/Basics)(rendering texts and components without complexity, e.g. no hooks and conditionals)
-- :x: Fire user events(button clicks, input changes)
+- :heavy_check_mark: [Fire events](https://github.com/gomorizsolt/enzyme-vs-rtl/tree/master/src/components/Events)(button clicks, input changes)
 - :x: Props handling(receive texts, events and other values, render elements conditionally)
 - :x: Stateless & stateful components(trigger instance functions, access & manipulate data, lifecycle hooks)
+- :x: Mocks(3rd-party libraries/packages, class/props/global DOM functions)
 - :x: Hooks(most notably `useState` and `useEffect`)
 - :x: Asynchronous events(fetch & promises)
-- :x: Extras(snapshot generating)
+- :x: Extras(snapshot generating, applied styles to components)
 
 ## Resources
 

@@ -13,7 +13,7 @@ describe("Basics", () => {
             /* `getByText` may be more reliable as it does not depend on the exact format of the text.  */ 
             expect(getByText(/this is the simplest/i)).toBeInTheDocument();
 
-            expect(getByTestId("p-tag")).toHaveTextContent("This is the simplest text ever.");
+            expect(getByTestId("p-basic")).toHaveTextContent("This is the simplest text ever.");
         });
     });
 
@@ -23,7 +23,7 @@ describe("Basics", () => {
 
             expect(getByText(/click on the dumbest/i)).toBeInTheDocument();
 
-            expect(getByTestId("button-tag")).toHaveTextContent("Click on the dumbest button ever");
+            expect(getByTestId("button-basic")).toHaveTextContent("Click on the dumbest button ever");
         });
     });
 });
