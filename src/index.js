@@ -1,4 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ParagraphWithText from "./components/Basic/ParagraphWithText/ParagraphWithText";
 
-ReactDOM.render(<p>Enzyme vs. RTL</p>, document.getElementById("index"));
+ReactDOM.render(<ParagraphWithText />, document.getElementById("index"));
