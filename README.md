@@ -6,7 +6,7 @@
 - :x: Stateless & stateful components(trigger instance functions, access & manipulate data, lifecycle hooks)
 - :x: Components wrapped inside a HOC
 - :x: Mocks(3rd-party libraries/packages, class/props/global DOM functions)
-- :x: Hooks(most notably `useState` and `useEffect`)
+- :x: Hooks(most notably custom hooks, `useState` and `useEffect`)
 - :x: Asynchronous events(fetch & promises)
 - :x: Extras(snapshot generating, applied styles to components)
 
