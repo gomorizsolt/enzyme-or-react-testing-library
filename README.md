@@ -2,8 +2,8 @@
 
 ## TODOs
 
-- :heavy_check_mark: Basics(e.g. make sure the given text exists in the component)
-- :x: Conditional component rendering(e.g. the component receives custom prop and renders values depending on the prop)
+- :heavy_check_mark: Basis HTML elements and components rendering
+- :x: Conditional component rendering
 - :x: Stateless & stateful components
 - :x: Hooks(most notably `useState` and `useEffect`)
 - :x: Fire user events(click, input change)
