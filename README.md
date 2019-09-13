@@ -1,14 +1,12 @@
 # Enzyme vs RTL
 
-## TODOs
-
-- :heavy_check_mark: Basis HTML elements and components rendering
-- :x: Conditional component rendering
-- :x: Stateless & stateful components
+- :x: Basic stuff(rendering texts and components without complexity, e.g. no hooks and conditionals)
+- :x: Fire user events(button clicks, input changes)
+- :x: Props handling(receive texts, events and other values, render elements conditionally)
+- :x: Stateless & stateful components(trigger instance functions, access & manipulate data)
 - :x: Hooks(most notably `useState` and `useEffect`)
-- :x: Fire user events(click, input change)
-- :x: Asynchronous events(built-in `fetch` and promises)
-- :x: Snapshot testing
+- :x: Asynchronous events(fetch & promises)
+- :x: Extras(snapshot generating)
 
 ## Resources
 
