@@ -1,6 +1,6 @@
 # Enzyme vs RTL
 
-- :x: Basic stuff(rendering texts and components without complexity, e.g. no hooks and conditionals)
+- :heavy_check_mark: Basic stuff(rendering texts and components without complexity, e.g. no hooks and conditionals)
 - :x: Fire user events(button clicks, input changes)
 - :x: Props handling(receive texts, events and other values, render elements conditionally)
 - :x: Stateless & stateful components(trigger instance functions, access & manipulate data, lifecycle hooks)
