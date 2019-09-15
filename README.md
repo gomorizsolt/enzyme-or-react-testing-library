@@ -14,9 +14,11 @@ It's likely to be confusing for the first time to understand to what extent the 
 
 ## [Setup](./test-configs)
 
-### [Enzyme](https://airbnb.io/enzyme/docs/installation/)
-
 See how the configurations are set up in [Jest](./jest.config.js).
+
+In case you're insterested in various Jest matchers other than the default ones, it's recommended to install [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom).
+
+### [Enzyme](https://airbnb.io/enzyme/docs/installation/)
 
 ```js
 import { configure } from 'enzyme';
@@ -28,8 +30,6 @@ configure({ adapter: new Adapter() });
 ### [react-testing-library](https://github.com/testing-library/react-testing-library#installation)
 
 There's no required and complicated configuration, although the documentation suggests some preparation best-practices.
-
-In case you're insterested in various Jest matchers other than the default ones, it's recommended to install [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom).
 
 ## Resources
 
