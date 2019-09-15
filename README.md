@@ -16,7 +16,7 @@ It's likely to be confusing for the first time to understand to what extent the 
 
 ### [Enzyme](https://airbnb.io/enzyme/docs/installation/)
 
-See how the configurations are set up in [Jest](./jest.config.js)).
+See how the configurations are set up in [Jest](./jest.config.js).
 
 ```js
 import { configure } from 'enzyme';
