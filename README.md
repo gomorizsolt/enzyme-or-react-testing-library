@@ -12,7 +12,7 @@ It's likely to be confusing for the first time to understand to what extent the 
 
 > The more your tests resemble the way your software is used, the more confidence they can give you. [(*Kent C. Dodds, Twitter*)](https://twitter.com/kentcdodds/status/977018512689455106?ref_src=twsrc%5Etfw)
 
-## [Setup](./setup)
+## [Setup](./test-configs)
 
 ### [Enzyme](https://airbnb.io/enzyme/docs/installation/)
 
@@ -27,7 +27,9 @@ configure({ adapter: new Adapter() });
 
 ### [react-testing-library](https://github.com/testing-library/react-testing-library#installation)
 
-There's no required and complicated configuration, although the documentation suggests some preparation best-practices. In case you're insterested in various Jest matchers other than the default ones, the library recommends installing [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom).
+There's no required and complicated configuration, although the documentation suggests some preparation best-practices.
+
+In case you're insterested in various Jest matchers other than the default ones, it's recommended to install [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom).
 
 ## Resources
 
