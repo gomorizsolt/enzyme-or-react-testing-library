@@ -4,7 +4,7 @@ The repository is designed to compare the idiosyncrasies of most ubiquitous Reac
 
 ## Concepts
 
-It's likely to be confusing for the first time to understand to what extent the libraries differ from each other. To grasp the main concepts, it's strongly advised to read some of the [resources](#Resources), although learning through practice is more effective, as well as can absolutely shorten the time. For those who would like to dive right in, please at least see the cited definitons below.
+It's likely to be confusing for the first time to understand to what extent the libraries differ from each other. To grasp the main concepts, it's strongly advised to process some of the [resources](#Resources), although learning through practice is more effective, as well as can absolutely shorten the time. For those who would like to dive right in, please at least see the cited definitons below.
 
 > Rather than tests focusing on the implementation (Enzyme), tests are more focused on user behavior (react-testing-library). [(*David Boyne, Medium - My experience moving from Enzyme to react-testing-library*)](https://medium.com/@boyney123/my-experience-moving-from-enzyme-to-react-testing-library-5ac65d992ce)
 
@@ -12,7 +12,22 @@ It's likely to be confusing for the first time to understand to what extent the 
 
 > The more your tests resemble the way your software is used, the more confidence they can give you. [(*Kent C. Dodds, Twitter*)](https://twitter.com/kentcdodds/status/977018512689455106?ref_src=twsrc%5Etfw)
 
-## Setup
+## [Setup](./setup)
+
+### [Enzyme](https://airbnb.io/enzyme/docs/installation/)
+
+See how the configurations are set up in [Jest](./jest.config.js)).
+
+```js
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
+```
+
+### [react-testing-library](https://github.com/testing-library/react-testing-library#installation)
+
+There's no required and complicated configuration, although the documentation suggests some preparation best-practices. In case you're insterested in various Jest matchers other than the default ones, the library recommends installing [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom).
 
 ## Resources
 
