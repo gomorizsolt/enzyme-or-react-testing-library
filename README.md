@@ -31,7 +31,7 @@ configure({ adapter: new Adapter() });
 
 There's no required and complicated configuration, although the documentation suggests some preparation best-practices.
 
-## ...
+## Idiosyncrasies
 
 ### Render components
 
@@ -61,7 +61,7 @@ import { render } from "enzyme";
 render(<div />);
 ```
 
-### react-testing-library
+#### react-testing-library
 
 [`render`](https://testing-library.com/docs/react-testing-library/api#render)
 
