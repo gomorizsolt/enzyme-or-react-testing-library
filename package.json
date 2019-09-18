@@ -4,7 +4,6 @@
   "description": "## Aim",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
     "test": "jest --coverage"
   },
   "repository": {

@@ -14,62 +14,12 @@ It's likely to be confusing for the first time to understand to what extent the 
 
 ## [Setup](./test-configs)
 
-See how the configurations are set up in [Jest](./jest.config.js).
+- [Enzyme](https://airbnb.io/enzyme/docs/installation/)
+- [react-testing-library](https://github.com/testing-library/react-testing-library#installation)
 
 In case you're insterested in various Jest matchers other than the default ones, it's recommended to install [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom).
 
-### [Enzyme](https://airbnb.io/enzyme/docs/installation/)
-
-```js
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
-configure({ adapter: new Adapter() });
-```
-
-### [react-testing-library](https://github.com/testing-library/react-testing-library#installation)
-
-There's no required and complicated configuration, although the documentation suggests some preparation best-practices.
-
 ## Idiosyncrasies
-
-### Render components
-
-#### Enzyme
-
-[`shallow`](https://airbnb.io/enzyme/docs/api/shallow.html)
-
-```js
-import { shallow } from "enzyme";
-
-shallow(<div />);
-```
-
-[`mount`](https://airbnb.io/enzyme/docs/api/mount.html)
-
-```js
-import { mount } from "enzyme";
-
-mount(<div />);
-```
-
-[`render`](https://airbnb.io/enzyme/docs/api/render.html)
-
-```js
-import { render } from "enzyme";
-
-render(<div />);
-```
-
-#### react-testing-library
-
-[`render`](https://testing-library.com/docs/react-testing-library/api#render)
-
-```js
-import { render } from '@testing-library/react';
-
-render(<Component />);
-```
 
 ### Find elements
 
