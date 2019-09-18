@@ -12,7 +12,7 @@ It's likely to be confusing for the first time to understand to what extent the 
 
 > The more your tests resemble the way your software is used, the more confidence they can give you. [(*Kent C. Dodds, Twitter*)](https://twitter.com/kentcdodds/status/977018512689455106?ref_src=twsrc%5Etfw)
 
-## [Setup]
+## Setup
 
 Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js). It's worth mentioning that `react-testing-library` can be used out of the box, thereby a separate configuration file wouldn't be necessary. It's presented there to set up [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) - in case you're interested in various Jest matches other than the default ones.
 
