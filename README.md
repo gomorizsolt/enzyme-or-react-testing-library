@@ -18,10 +18,24 @@ Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js)
 
 ## Idiosyncrasies
 
-### [Find elements](./src/find-elements/find-elements.js)
+### [Find elements](./tests/find-elements.test.js)
 
 - If the implementation changes(e.g. the order of the components), Enzyme will fail, whilst RTL won't due to not accessing the components by their position.
 - Enzyme doesn't expose various ways to find particular elements as opposed to what RTL offers.
+
+???
+- It's difficult to access the props.
+- Some of the extended Jest matchers cannot be used(e.g. `toHaveAttribute` because the component isn't rendered directly to the DOM).
+
+### Fire events
+
+### Components wrapped inside HOC(s)
+
+### Asynchronous events
+
+### Hooks
+
+### Extras
 
 ## Resources
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { render, cleanup } from "@testing-library/react";
+import { render, cleanup, fireEvent } from "@testing-library/react";
 
 const Foo = () => (
     <div>
@@ -11,11 +11,6 @@ const Foo = () => (
         <button type="submit">Login</button>
     </div>
 );
-
-/*
-- It's difficult to access the props.
-- Some of the extended Jest matchers cannot be used(e.g. `toHaveAttribute` because the component isn't rendered directly to the DOM).
-*/
 
 // https://testing-library.com/docs/react-testing-library/api#cleanup
 afterEach(cleanup);
