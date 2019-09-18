@@ -1,16 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { render, cleanup, fireEvent } from "@testing-library/react";
-
-const Foo = () => (
-    <div>
-        <label htmlFor="username" data-testid="username-label">Username</label>
-        <input id="username" type="text" placeholder="Username" />
-        <label htmlFor="password">Password</label>
-        <input id="password" type="password" />
-        <button type="submit">Login</button>
-    </div>
-);
+import { render, cleanup } from "@testing-library/react";
+import FindElementsFoo from "../foo-components/find-elements";
 
 // https://testing-library.com/docs/react-testing-library/api#cleanup
 afterEach(cleanup);
@@ -23,7 +14,7 @@ describe("Find certain elements in <Foo />", () => {
         // returns a set of utility functions(queries coming from the DOM Testing Library, rerender, unmount etc)
         describe("find the <label /> for the username <input />", () => {
             it("uses `getByLabelText`", () => {
-                const { getByLabelText } = render(<Foo />);
+                const { getByLabelText } = render(<FindElementsFoo />);
     
                 // https://testing-library.com/docs/dom-testing-library/api-queries#textmatch
                 expect(getByLabelText("Username")).toBeInTheDocument();
@@ -32,14 +23,14 @@ describe("Find certain elements in <Foo />", () => {
 
             it("uses `getByTestId`", () => {
                 // https://testing-library.com/docs/dom-testing-library/api-queries#bytestid
-                const { getByTestId } = render(<Foo />);
+                const { getByTestId } = render(<FindElementsFoo />);
 
                 expect(getByTestId("username-label")).toBeInTheDocument();
                 expect(getByTestId(/username/i)).toBeInTheDocument();
             });
 
             it("uses `queryByLabelTest", () => {
-                const { queryByLabelText } = render(<Foo />);
+                const { queryByLabelText } = render(<FindElementsFoo />);
 
                 expect(queryByLabelText("Username")).toBeInTheDocument();
                 expect(queryByLabelText(/usern/i)).toBeInTheDocument();
@@ -48,7 +39,7 @@ describe("Find certain elements in <Foo />", () => {
 
         describe("find the <input /> for the username <label />", () => {
             it("uses `getByPlaceholderText`", () => {
-                const { getByPlaceholderText } = render(<Foo />);
+                const { getByPlaceholderText } = render(<FindElementsFoo />);
 
                 expect(getByPlaceholderText("Username")).toBeInTheDocument();
                 expect(getByPlaceholderText(/username/i)).toBeInTheDocument();
@@ -64,7 +55,7 @@ describe("Find certain elements in <Foo />", () => {
             let fooWrapper;
 
             beforeEach(() => {
-                fooWrapper = shallow(<Foo />);
+                fooWrapper = shallow(<FindElementsFoo />);
             });
 
             it("uses `find`", () => {
@@ -77,7 +68,7 @@ describe("Find certain elements in <Foo />", () => {
             let fooWrapper;
 
             beforeEach(() => {
-                fooWrapper = shallow(<Foo />);
+                fooWrapper = shallow(<FindElementsFoo />);
             });
 
             it("uses `find`", () => {
