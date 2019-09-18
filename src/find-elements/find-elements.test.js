@@ -12,6 +12,11 @@ const Foo = () => (
     </div>
 );
 
+/*
+- It's difficult to access the props.
+- Some of the extended Jest matchers cannot be used(e.g. `toHaveAttribute` because the component isn't rendered directly to the DOM).
+*/
+
 // https://testing-library.com/docs/react-testing-library/api#cleanup
 afterEach(cleanup);
 
