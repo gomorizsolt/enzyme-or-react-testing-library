@@ -14,11 +14,16 @@ It's likely to be confusing for the first time to understand to what extent the 
 
 ## Setup
 
-Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js). It's worth mentioning that `react-testing-library` can be used out of the box, thereby a separate configuration file wouldn't be required at all. It's presented there to set up [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) - in case you're interested in various Jest matches other than the default ones.
+Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js). It's worthwhile to mention that `react-testing-library` can be used out of the box, thereby a separate configuration file wouldn't be required at all. It's presented there to set up [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) - in case you're interested in various Jest matches other than the default ones.
 
 ## Idiosyncrasies
 
-### Find elements
+### [Find elements](./src/find-elements/find-elements.js)
+
+- If the order of the components changes(i.e. the implementation details), Enzyme will fail.
+- It's difficult to access the props.
+- Some of the extended Jest matchers cannot be used(e.g. `toHaveAttribute` because the component isn't rendered directly to the DOM).
+- Enzyme doesn't expose various ways to find particular elements as opposed to what RTL offers.
 
 ## Resources
 
