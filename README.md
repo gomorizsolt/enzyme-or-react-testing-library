@@ -27,7 +27,7 @@ Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js)
 - It's difficult to access the props.
 - Some of the extended Jest matchers cannot be used(e.g. `toHaveAttribute` because the component isn't rendered directly to the DOM).
 
-### Fire events
+### [Fire events](./tests/fire-events.test.js)
 
 ### Components wrapped inside HOC(s)
 

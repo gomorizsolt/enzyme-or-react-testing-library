@@ -30,4 +30,20 @@ describe("Fire events", () => {
             expect(click).toHaveBeenCalled();
         });
     });
+
+    describe("Enzyme", () => {
+        let fireEventsFooWrapper;
+
+        const click = jest.fn();
+
+        beforeEach(() => {
+            fireEventsFooWrapper = shallow(<FireEventsFoo click={click} />);
+        });
+
+        it("calls `props.click` when the submit <button /> is clicked", () => {
+            fireEventsFooWrapper.find("button").simulate("click");
+
+            expect(click).toHaveBeenCalled();
+        });
+    });
 });
