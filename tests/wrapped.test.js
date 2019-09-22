@@ -25,6 +25,7 @@ describe("Components wrapped inside HOC(s)", () => {
         let wrappedFooWrapper;
 
         beforeEach(() => {
+            // Shallow rendering is possible if the component is accessed one level deeper, however, it would definitely fail if more than one HOC applied to the component.
             wrappedFooWrapper = shallowWrappedComponent(<WrappedFoo />);
         });
 
