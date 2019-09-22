@@ -1,5 +1,16 @@
 # [enzyme](https://github.com/airbnb/enzyme) || [react-testing-library](https://github.com/testing-library/react-testing-library)
 
+## TODOs
+
+- :heavy_check_mark: [Find elements](./tests/find-elements.test.js)
+- :heavy_check_mark: [Fire events](./tests/fire-events.test.js)
+- :heavy_check_mark: [Components wrapped inside HOC(s)](./tests/wrapped.test.js)
+- :x: Asynchronous events
+- :x: Hooks
+- :x: Extras(snapshot testing, styling)
+
+---
+
 The repository is designed to compare the idiosyncrasies of most ubiquitous React unit-testing libraries.
 
 ## Concepts
@@ -15,20 +26,6 @@ It's likely to be confusing for the first time to understand to what extent the 
 ## Setup
 
 Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js). It's worthwhile to mention that `react-testing-library` can be used out of the box, thereby a separate configuration file wouldn't be required at all. It's presented there to set up [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) - in case you're interested in various Jest matches other than the default ones.
-
-## Idiosyncrasies
-
-### [Find elements](./tests/find-elements.test.js)
-
-### [Fire events](./tests/fire-events.test.js)
-
-### [Components wrapped inside HOC(s)](./tests/wrapped.test.js)
-
-### Asynchronous events
-
-### Hooks
-
-### Extras
 
 ## Observations
 

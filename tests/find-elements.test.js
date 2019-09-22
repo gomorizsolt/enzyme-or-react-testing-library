@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import { render, cleanup } from "@testing-library/react";
-import FindElementsFoo from "../foo-components/find-elements";
+import FindElementsFoo from "../sample-components/find-elements";
 
 // https://testing-library.com/docs/react-testing-library/api#cleanup
 afterEach(cleanup);

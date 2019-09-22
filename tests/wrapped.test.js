@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
 import { render, cleanup } from "@testing-library/react";
-import WrappedFoo from "../foo-components/wrapped";
+import WrappedFoo from "../sample-components/wrapped";
 
 afterEach(cleanup);
 
@@ -10,8 +10,8 @@ describe("Components wrapped inside HOC(s)", () => {
         it ("renders a <h1 />", () => {
             const { getByTestId } = render(<WrappedFoo />);
 
-            expect(getByTestId("test-h1")).toBeInTheDocument();
-            expect(getByTestId("test-h1")).toHaveStyle("font-size: 20px");
+            expect(getByTestId("h1")).toBeInTheDocument();
+            expect(getByTestId("h1")).toHaveStyle("font-size: 20px");
         });
     });
 

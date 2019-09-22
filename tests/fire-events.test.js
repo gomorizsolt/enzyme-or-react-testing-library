@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import { render, fireEvent, cleanup } from "@testing-library/react";
-import FireEventsFoo from "../foo-components/fire-events";
+import FireEventsFoo from "../sample-components/fire-events";
 
 afterEach(cleanup);
 
