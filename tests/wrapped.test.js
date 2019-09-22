@@ -21,15 +21,11 @@ describe("Components wrapped inside HOC(s)", () => {
 
         // Shallow rendering would fail in this case, because merely the outer surface of the HOC is rendered, nor the wrapped component.
         // Full DOM rendering passes, but renders the whole tree.
-        
-        let wrappedFooWrapper;
-
-        beforeEach(() => {
-            // Shallow rendering is possible if the component is accessed one level deeper, however, it would definitely fail if more than one HOC applied to the component.
-            wrappedFooWrapper = shallowWrappedComponent(<WrappedFoo />);
-        });
+        // Shallow rendering is possible if the component is accessed one level deeper, however, it would definitely fail if more than one HOC is applied to the component.
 
         it("renders a <h1 />", () => {
+            const wrappedFooWrapper = shallowWrappedComponent(<WrappedFoo />);
+
             expect(wrappedFooWrapper.find("h1")).toHaveLength(1);
 
         // https://www.npmjs.com/package/jest-styled-components#tohavestylerule

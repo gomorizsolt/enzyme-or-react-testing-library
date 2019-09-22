@@ -6,7 +6,7 @@
 - :heavy_check_mark: [Fire events](./tests/fire-events.test.js)
 - :heavy_check_mark: [Components wrapped inside HOC(s)](./tests/wrapped.test.js)
 - :heavy_check_mark: [Asynchronous events](./tests/asynchronous.test.js)
-- :x: Hooks
+- :x: [Hooks](./tests/hooks.test.js)
 - :x: Extras(snapshot testing, styling)
 
 ---
@@ -33,6 +33,10 @@ See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) i
 
 - If the implementation changes(e.g. the order of the components), Enzyme will fail, whilst RTL won't due to not accessing the components by their position.
 - Enzyme doesn't expose various ways to find particular elements as opposed to what RTL offers.
+
+...
+
+Enzyme + test styles.
 
 ## Resources
 

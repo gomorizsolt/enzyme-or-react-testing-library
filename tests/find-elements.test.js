@@ -52,28 +52,20 @@ describe("Find certain elements in <Foo />", () => {
 
     describe("Enzyme", () => {
         describe("find the <label /> for the password <input />", () => {
-            let fooWrapper;
-
-            beforeEach(() => {
-                fooWrapper = shallow(<FindElementsFoo />);
-            });
-
             it("uses `find`", () => {
-                expect(fooWrapper.find("label").first().text()).toEqual("Username");
-                expect(fooWrapper.find("label").first().text()).toMatch(/usern/i);
+                const findElementsFooWrapper = shallow(<FindElementsFoo />);
+
+                expect(findElementsFooWrapper.find("label").first().text()).toEqual("Username");
+                expect(findElementsFooWrapper.find("label").first().text()).toMatch(/usern/i);
             });
         });
 
         describe("find the <input /> for the password <label />", () => {
-            let fooWrapper;
-
-            beforeEach(() => {
-                fooWrapper = shallow(<FindElementsFoo />);
-            });
-
             it("uses `find`", () => {
-                expect(fooWrapper.find("input").last().props().type).toEqual("password");
-                expect(fooWrapper.find("input").last().props().type).toMatch(/passw/i);
+                const findElementsFooWrapper = shallow(<FindElementsFoo />);
+
+                expect(findElementsFooWrapper.find("input").last().props().type).toEqual("password");
+                expect(findElementsFooWrapper.find("input").last().props().type).toMatch(/passw/i);
             });
         }); 
     });
