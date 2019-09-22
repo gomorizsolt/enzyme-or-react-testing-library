@@ -5,7 +5,7 @@
 - :heavy_check_mark: [Find elements](./tests/find-elements.test.js)
 - :heavy_check_mark: [Fire events](./tests/fire-events.test.js)
 - :heavy_check_mark: [Components wrapped inside HOC(s)](./tests/wrapped.test.js)
-- :x: Asynchronous events
+- :heavy_check_mark: [Asynchronous events](./tests/asynchronous.test.js)
 - :x: Hooks
 - :x: Extras(snapshot testing, styling)
 

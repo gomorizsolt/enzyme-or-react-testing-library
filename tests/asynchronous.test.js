@@ -60,6 +60,9 @@ describe("Asynchronous events", () => {
         let asynchronousFooWrapper;
 
         beforeEach(() => {
+            // https://jestjs.io/docs/en/timer-mocks
+            jest.useFakeTimers();
+
             asynchronousFooWrapper = shallow(<AsynchronousFoo />);
         });
 
@@ -82,13 +85,21 @@ describe("Asynchronous events", () => {
         // ?!
         describe("increaseAsync", () => {
             it("increases `count` when `setTimeout` expires", async () => {
+                asynchronousFooWrapper.find("button").at(2).simulate("click");
 
+                jest.runAllTimers();
+
+                expect(asynchronousFooWrapper.find("p").text()).toEqual("1");
             });
         });
 
         describe("decreaseAsync", () => {
             it("decreases `count` when `setTimeout` expires", async () => {
-                
+                asynchronousFooWrapper.find("button").last().simulate("click");
+
+                jest.runAllTimers();
+
+                expect(asynchronousFooWrapper.find("p").text()).toEqual("-1");
             });
         });
     });
