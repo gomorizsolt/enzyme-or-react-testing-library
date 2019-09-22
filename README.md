@@ -22,7 +22,7 @@ Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js)
 
 ### [Fire events](./tests/fire-events.test.js)
 
-### Components wrapped inside HOC(s)
+### [Components wrapped inside HOC(s)](./tests/wrapped.js)
 
 ### Asynchronous events
 

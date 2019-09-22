@@ -29,7 +29,7 @@ describe("Find certain elements in <Foo />", () => {
                 expect(getByTestId(/username/i)).toBeInTheDocument();
             });
 
-            it("uses `queryByLabelTest", () => {
+            it("uses `queryByLabelText", () => {
                 const { queryByLabelText } = render(<FindElementsFoo />);
 
                 expect(queryByLabelText("Username")).toBeInTheDocument();
