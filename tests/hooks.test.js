@@ -1,7 +1,9 @@
 import React from "react";
 import { mount } from "enzyme";
-import { render, fireEvent } from "@testing-library/react";
+import { render, cleanup, fireEvent } from "@testing-library/react";
 import HooksFoo from "../sample-components/hooks";
+
+afterEach(cleanup);
 
 describe("Hooks", () => {
     describe("react-testing-library", () => {
