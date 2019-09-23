@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
 import { render, cleanup } from "@testing-library/react";
-import WrappedFoo from "../sample-components/wrapped";
+import WrappedFoo from "../components/wrapped";
 
 afterEach(cleanup);
 

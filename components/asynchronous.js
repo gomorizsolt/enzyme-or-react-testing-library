@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { testIds } from "../test-ids/asynchronous";
+import axios from "axios";
 
 const asynchronousFoo = () => {
     const [count, setCount] = useState(0);
@@ -22,7 +22,7 @@ const asynchronousFoo = () => {
 
     return (
         <div>
-            <p data-testid={testIds.COUNT_DISPLAYER}>{count}</p>
+            <p data-testid="count-displayer">{count}</p>
             <button type="button" onClick={increaseSync}>Increase Sync</button>
             <button type="button" onClick={decreaseSync}>Decrease Sync</button>
             <button type="button" onClick={increaseAsync}>Increase Async</button>

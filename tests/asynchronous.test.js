@@ -1,8 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import { render, cleanup, fireEvent, waitForElement } from "@testing-library/react";
-import AsynchronousFoo from "../sample-components/asynchronous";
-import { testIds } from "../test-ids/asynchronous";
+import AsynchronousFoo from "../components/asynchronous";
 
 // Polyfill is mandatory because of async-await utilities.
 import "@babel/polyfill";
@@ -17,7 +16,7 @@ describe("Asynchronous events", () => {
 
                 fireEvent.click(getByText(/increase sync/i));
 
-                expect(getByTestId(testIds.COUNT_DISPLAYER)).toHaveTextContent("1");
+                expect(getByTestId("count-displayer")).toHaveTextContent("1");
             });
         });
 
@@ -27,12 +26,12 @@ describe("Asynchronous events", () => {
 
                 fireEvent.click(getByText(/decrease sync/i));
 
-                expect(getByTestId(testIds.COUNT_DISPLAYER)).toHaveTextContent("-1");
+                expect(getByTestId("count-displayer")).toHaveTextContent("-1");
             });
         });
 
         describe("increaseAsync", () => {
-            it("increases `count` when `setTimeout` expires", async () => {
+            it("increases `count` when `setTimeout()` expires", async () => {
                 const { getByText } = render(<AsynchronousFoo />);
 
                 fireEvent.click(getByText(/increase async/i));
@@ -44,7 +43,7 @@ describe("Asynchronous events", () => {
         });
 
         describe("decreaseAsync", () => {
-            it("decreases `count` when `setTimeout` expires", async () => {
+            it("decreases `count` when `setTimeout()` expires", async () => {
                 const { getByText } = render(<AsynchronousFoo />);
 
                 fireEvent.click(getByText(/decrease async/i));
@@ -82,9 +81,8 @@ describe("Asynchronous events", () => {
             });
         });
 
-        // ?!
         describe("increaseAsync", () => {
-            it("increases `count` when `setTimeout` expires", async () => {
+            it("increases `count` when `setTimeout()` expires", async () => {
                 asynchronousFooWrapper.find("button").at(2).simulate("click");
 
                 jest.runAllTimers();
@@ -94,7 +92,7 @@ describe("Asynchronous events", () => {
         });
 
         describe("decreaseAsync", () => {
-            it("decreases `count` when `setTimeout` expires", async () => {
+            it("decreases `count` when `setTimeout()` expires", async () => {
                 asynchronousFooWrapper.find("button").last().simulate("click");
 
                 jest.runAllTimers();

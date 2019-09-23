@@ -1,7 +1,7 @@
 import React from "react";
 import { mount } from "enzyme";
 import { render, cleanup, fireEvent } from "@testing-library/react";
-import HooksFoo from "../sample-components/hooks";
+import HooksFoo from "../components/hooks";
 
 afterEach(cleanup);
 

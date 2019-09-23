@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import { render, cleanup } from "@testing-library/react";
-import FindElementsFoo from "../sample-components/find-elements";
+import FindElementsFoo from "../components/find-elements";
 
 // https://testing-library.com/docs/react-testing-library/api#cleanup
 afterEach(cleanup);
@@ -64,6 +64,7 @@ describe("Find certain elements in <Foo />", () => {
             it("uses `find`", () => {
                 const findElementsFooWrapper = shallow(<FindElementsFoo />);
 
+                expect(findElementsFooWrapper.find("#username")).toHaveLength(1);
                 expect(findElementsFooWrapper.find("input").last().props().type).toEqual("password");
                 expect(findElementsFooWrapper.find("input").last().props().type).toMatch(/passw/i);
             });
