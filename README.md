@@ -20,7 +20,7 @@ See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) i
 
 ## Elements
 
-#### :heavy_check_mark: Find elements [[`implementation`](./components/find-elements.js) | [`tests`](./tests/find-elements)]
+#### :heavy_check_mark: Find elements [[`implementation`](./components/find-elements.js) | [`enzyme`](./tests/find-elements/find-elements.enzyme.test.js) | [`react-testing-library`](./tests/find-elements/find-elements.react-testing-library.test.js)]
 
 - :heavy_check_mark: [Find elements](./tests/find-elements.test.js)
 - :heavy_check_mark: [Fire events](./tests/fire-events.test.js)
