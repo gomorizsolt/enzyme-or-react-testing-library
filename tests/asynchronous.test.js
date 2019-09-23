@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { render, cleanup, fireEvent, waitForElement } from "@testing-library/react";
+import { render, cleanup, fireEvent, wait, waitForElement } from "@testing-library/react";
 import AsynchronousFoo from "../components/asynchronous";
 
 // Polyfill is mandatory because of async-await utilities.
@@ -36,9 +36,21 @@ describe("Asynchronous events", () => {
 
                 fireEvent.click(getByText(/increase async/i));
 
+                // Waiting for the element to be appeared on the screen.
+                // https://testing-library.com/docs/dom-testing-library/api-async#waitforelement
                 const countDisplayer = await waitForElement(() => getByText("1"));
 
                 expect(countDisplayer).toHaveTextContent("1");
+            });
+
+            it("test", async () => {
+                const { getByTestId, getByText } = render(<AsynchronousFoo />);
+
+                fireEvent.click(getByText(/increase async/i));
+
+                await wait(() => getByText("1"));
+
+                expect(getByTestId("count-displayer")).toHaveTextContent("1");
             });
         });
 
@@ -59,6 +71,7 @@ describe("Asynchronous events", () => {
         let asynchronousFooWrapper;
 
         beforeEach(() => {
+            // Jest is able to mock out timers and intervals.
             // https://jestjs.io/docs/en/timer-mocks
             jest.useFakeTimers();
 
@@ -85,6 +98,7 @@ describe("Asynchronous events", () => {
             it("increases `count` when `setTimeout()` expires", async () => {
                 asynchronousFooWrapper.find("button").at(2).simulate("click");
 
+                // Waiting for the specified ms to expire would make the tests sluggish.
                 jest.runAllTimers();
 
                 expect(asynchronousFooWrapper.find("p").text()).toEqual("1");

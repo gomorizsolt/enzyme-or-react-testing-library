@@ -19,9 +19,10 @@ describe("Components wrapped inside HOC(s)", () => {
         const shallowWrappedComponent = wrappedComponent =>
             shallow(shallow(wrappedComponent).get(0));
 
-        // Shallow rendering would fail in this case, because merely the outer surface of the HOC is rendered, nor the wrapped component.
+        // Shallow rendering would fail in this case, because merely the exterior surface of the HOC is rendered, nor the wrapped component.
         // Full DOM rendering passes, but renders the whole tree.
         // Shallow rendering is possible if the component is accessed one level deeper, however, it would definitely fail if more than one HOC is applied to the component.
+        // Enzyme, unfortunately, does not provide a "go-to solution".
 
         it("renders a <h1 />", () => {
             const wrappedFooWrapper = shallowWrappedComponent(<WrappedFoo />);

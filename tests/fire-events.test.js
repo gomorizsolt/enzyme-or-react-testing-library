@@ -13,6 +13,7 @@ describe("Fire events", () => {
             const email = "john.doe@xyz.com";
             const input = getByPlaceholderText(/email/i);
 
+            // https://testing-library.com/docs/dom-testing-library/api-events
             fireEvent.change(input, { target: { value: email }});
 
             expect(input.value).toEqual(email);

@@ -6,18 +6,19 @@ import HooksFoo from "../components/hooks";
 afterEach(cleanup);
 
 describe("Hooks", () => {
+    let consoleLogSpy;
+
+    beforeEach(() => {
+        consoleLogSpy = jest.spyOn(console, "log").mockImplementation();
+    });
+
+    afterEach(() => {
+        consoleLogSpy.mockRestore();
+    });
+
     describe("react-testing-library", () => {
-        /* let consoleLogSpy;
-
-        beforeEach(() => {
-            // It doesn't mock the console log in the second test suite for some reason.
-            consoleLogSpy = jest.spyOn(console, "log").mockImplementationOnce(() => jest.fn());
-        }); */
-
         describe("when the component mounts for the first time", () => {
             it("logs the message to the console with 0", () => {
-                const consoleLogSpy = jest.spyOn(console, "log").mockImplementationOnce(() => jest.fn());
-
                 render(<HooksFoo />);
 
                 expect(consoleLogSpy).toHaveBeenCalledWith(`Count has changed to 0.`);
@@ -26,8 +27,6 @@ describe("Hooks", () => {
 
         describe("when `count` changes", () => {
             it("logs the message to the console with the increased value", () => {
-                const consoleLogSpy = jest.spyOn(console, "log").mockImplementationOnce(() => jest.fn());
-
                 const { getByText } = render(<HooksFoo />);
 
                 fireEvent.click(getByText(/increase/i));
@@ -38,13 +37,8 @@ describe("Hooks", () => {
     });
 
     describe("Enzyme", () => {
-        // Enzyme isn't capable to trigger `useEffect` when using shallow rendering.
-        // Instead, full DOM rendering is required.
-
         describe("when the component mounts for the first time", () => {
             it("logs the message to the console with 0", () => {
-                const consoleLogSpy = jest.spyOn(console, "log").mockImplementationOnce(() => jest.fn());
-
                 mount(<HooksFoo />);
 
                 expect(consoleLogSpy).toHaveBeenCalledWith(`Count has changed to 0.`);
@@ -53,8 +47,6 @@ describe("Hooks", () => {
 
         describe("when `count` changes", () => {
             it("logs the message to the console with the increased value", () => {
-                const consoleLogSpy = jest.spyOn(console, "log").mockImplementationOnce(() => jest.fn());
-
                 const hooksFooWrapper = mount(<HooksFoo />);
 
                 hooksFooWrapper.find("button").simulate("click");

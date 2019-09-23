@@ -1,14 +1,13 @@
 # [enzyme](https://github.com/airbnb/enzyme) || [react-testing-library](https://github.com/testing-library/react-testing-library)
 
-## TODOs
+## Elements
 
 - :heavy_check_mark: [Find elements](./tests/find-elements.test.js)
 - :heavy_check_mark: [Fire events](./tests/fire-events.test.js)
-- :x: [Conditionals](./tests/conditionals.test.js)
+- :heavy_check_mark: [Conditionals](./tests/conditionals.test.js)
 - :heavy_check_mark: [Components wrapped inside HOC(s)](./tests/wrapped.test.js)
 - :heavy_check_mark: [Asynchronous events](./tests/asynchronous.test.js)
-- :x: [Hooks](./tests/hooks.test.js)
-- :x: Extras(snapshot testing, styling)
+- :heavy_check_mark: [Hooks](./tests/hooks.test.js)
 
 ---
 
@@ -28,23 +27,7 @@ It's likely to be confusing for the first time to understand to what extent the 
 
 Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js). It's worthwhile to mention that `react-testing-library` can be used out of the box without requiring a separate config file.
 
-See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) in case you want your tests to be more readable, as well as being greatly-enhanced with Jest expectors other than the default ones.
-
-## Observations
-
-### `enzyme`
-
-- Fragile
-- Tests are fragile.
-
-- Implementation changes significantly affects `enzyme` tests whereas `react-testing-library`
-
-- If the implementation changes(e.g. the order of the components), Enzyme will fail, whilst RTL won't due to not accessing the components by their position.
-- Enzyme doesn't expose various ways to find particular elements as opposed to what RTL offers.
-
-...
-
-Enzyme + test styles.
+See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) in case you want your tests to be more explicit and readable, as well as being greatly-enhanced with Jest expectors other than the default ones.
 
 ## Resources
 
