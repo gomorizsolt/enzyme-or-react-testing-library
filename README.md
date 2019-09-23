@@ -1,16 +1,5 @@
 # [enzyme](https://github.com/airbnb/enzyme) || [react-testing-library](https://github.com/testing-library/react-testing-library)
 
-## Elements
-
-- :heavy_check_mark: [Find elements](./tests/find-elements.test.js)
-- :heavy_check_mark: [Fire events](./tests/fire-events.test.js)
-- :heavy_check_mark: [Conditionals](./tests/conditionals.test.js)
-- :heavy_check_mark: [Components wrapped inside HOC(s)](./tests/wrapped.test.js)
-- :heavy_check_mark: [Asynchronous events](./tests/asynchronous.test.js)
-- :heavy_check_mark: [Hooks](./tests/hooks.test.js)
-
----
-
 The repository is designed to compare the idiosyncrasies of most ubiquitous React unit-testing libraries.
 
 ## Concepts
@@ -31,9 +20,12 @@ See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) i
 
 ## Elements
 
-### :heavy_check_mark: Find elements
-- [Implementation](./components/find-elements.js)
-- [Test](./tests/find-elements.test.js)
+- :heavy_check_mark: [Find elements](./tests/find-elements.test.js)
+- :heavy_check_mark: [Fire events](./tests/fire-events.test.js)
+- :heavy_check_mark: [Conditionals](./tests/conditionals.test.js)
+- :heavy_check_mark: [Components wrapped inside HOC(s)](./tests/wrapped.test.js)
+- :heavy_check_mark: [Asynchronous events](./tests/asynchronous.test.js)
+- :heavy_check_mark: [Hooks](./tests/hooks.test.js)
 
 ## Resources
 
