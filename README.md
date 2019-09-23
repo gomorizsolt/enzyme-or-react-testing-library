@@ -22,8 +22,8 @@ See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) i
 
 #### :heavy_check_mark: Find elements [[`implementation`](./components/find-elements.js) | [`enzyme`](./tests/find-elements/find-elements.enzyme.test.js) | [`react-testing-library`](./tests/find-elements/find-elements.react-testing-library.test.js)]
 
-- :heavy_check_mark: [Find elements](./tests/find-elements.test.js)
-- :heavy_check_mark: [Fire events](./tests/fire-events.test.js)
+#### :heavy_check_mark: Fire events [[`implementation`](./components/fire-events.js) | [`enzyme`](./tests/fire-events/fire-events.enzyme.test.js) | [`react-testing-library`](./tests/fire-events/fire-events.react-testing-library.test.js)]
+
 - :heavy_check_mark: [Conditionals](./tests/conditionals.test.js)
 - :heavy_check_mark: [Components wrapped inside HOC(s)](./tests/wrapped.test.js)
 - :heavy_check_mark: [Asynchronous events](./tests/asynchronous.test.js)

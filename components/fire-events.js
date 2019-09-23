@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
-const fireEventsFoo = props => (
-    <div>
-        <input type="email" placeholder="email" />
-        <button type="submit" onClick={props.click}>Submit</button>
-    </div>
-);
+const fireEventsFoo = props => {
+    const [value, setValue] = useState("");
+
+    return (
+        <div>
+            <input type="email" placeholder="email" onChange={e => setValue(e.target.value)} />
+            <button type="submit" onClick={() => props.click(value)}>Submit</button>
+        </div>
+    );
+};
 
 export default fireEventsFoo;
