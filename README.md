@@ -29,6 +29,12 @@ Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js)
 
 See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) in case you want your tests to be more explicit and readable, as well as being greatly-enhanced with Jest expectors other than the default ones.
 
+## Elements
+
+### :heavy_check_mark: Find elements
+- [Implementation](./components/find-elements.js)
+- [Test](./tests/find-elements.test.js)
+
 ## Resources
 
 - [David Boyne, Medium - My experience moving from Enzyme to react-testing-library](https://medium.com/@boyney123/my-experience-moving-from-enzyme-to-react-testing-library-5ac65d992ce)
