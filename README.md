@@ -14,9 +14,12 @@ It's likely to be confusing for the first time to understand to what extent the 
 
 ## Setup
 
-Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js). It's worthwhile to mention that `react-testing-library` can be used out of the box without requiring a separate config file.
+Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js). 
 
-See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) in case you want your tests to be more explicit and readable, as well as being greatly-enhanced with Jest expectors other than the default ones.
+### Observations
+
+- It is worthwile to mention that `react-testing-library` can be used out of the box without requiring a separate config file, whereas Enzyme requires the adapter which is in line with React.
+- See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) in case you want your tests to be more explicit and readable, as well as being greatly-enhanced with Jest expectors other than the default ones.
 
 ## Elements
 
