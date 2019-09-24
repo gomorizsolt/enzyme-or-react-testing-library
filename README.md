@@ -4,7 +4,7 @@ The repository is designed to compare the idiosyncrasies of most ubiquitous Reac
 
 ## Concepts
 
-It's likely to be confusing for the first time to understand to what extent the libraries differ from each other. To grasp the main concepts, it's strongly advised to process some of the [resources](#Resources), although learning through practice is more effective, as well as can absolutely shorten the time. For those who would like to dive right in, see the quotes below.
+It's likely to be confusing for the first time to understand to what extent the libraries differ from each other. To grasp the main concepts, it's strongly advised to process some of the [resources](#Resources), although learning through practice is more effective and can absolutely shorten the time. For those who would like to dive right in, see the quotes below.
 
 > Rather than tests focusing on the implementation (Enzyme), tests are more focused on user behavior (react-testing-library). [(*David Boyne, Medium - My experience moving from Enzyme to react-testing-library*)](https://medium.com/@boyney123/my-experience-moving-from-enzyme-to-react-testing-library-5ac65d992ce)
 
