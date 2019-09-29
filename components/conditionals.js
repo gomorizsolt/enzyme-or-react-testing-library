@@ -5,7 +5,6 @@ const conditionalsFoo = () => {
     const defaultState = {
         data: null,
         isLoading: true,
-        isError: false
     };
 
     const [state, setState] = useState({
@@ -24,7 +23,6 @@ const conditionalsFoo = () => {
                 setState({
                     ...defaultState,
                     isLoadig: false,
-                    isError: true,
                 });
             });
     };
@@ -35,10 +33,6 @@ const conditionalsFoo = () => {
 
     if (state.isLoading) {
         return <div data-testid="loading">Loading data...</div>;
-    }
-
-    if(state.isError) {
-        return <div data-testid="error">Fetch error...</div>
     }
 
     return (

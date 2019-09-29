@@ -2,6 +2,8 @@ import React from "react";
 import { render, fireEvent, cleanup } from "@testing-library/react";
 import FireEventsFoo from "../../components/fire-events";
 
+afterEach(cleanup);
+
 describe("These test suites are designed to trigger events on the DOM", () => {
     const inputValue = "john.doe@xyz.com";
 
