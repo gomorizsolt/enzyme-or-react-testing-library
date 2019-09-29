@@ -1,3 +1,14 @@
+Hey!
+
+I'm not sure if anybody would be interested in such projects, but I have always had a strong keen to point out/show off the discrepancies of libraries.
+
+It's been confusing to me for a long time to understend to what extend Enzyme differs from react-testing-library. Thereby, I have decided to put the most ubiquitous React testing libraries under scrunity. Even though the project is under construction, IMO it's reached the state to be publicly demonstrated and also gather feedbacks from developers.
+
+I'm planning on describing my observations explicitly, as well as adding more tests scenarios.
+
+So, without further ado, here's the project:
+- https://github.com/gomorizsolt/enzyme-vs-rtl
+
 # [enzyme](https://github.com/airbnb/enzyme) || [react-testing-library](https://github.com/testing-library/react-testing-library)
 
 The repository is designed to compare the idiosyncrasies of most ubiquitous React unit-testing libraries.
@@ -24,11 +35,11 @@ See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) i
 
 #### :heavy_check_mark: Find elements [[`Implementation`](./components/find-elements.js) | [`Enzyme`](./tests/find-elements/find-elements.enzyme.test.js) | [`RTL`](./tests/find-elements/find-elements.rtl.test.js)]
 
-#### :heavy_check_mark: Fire events [[`Implementation`](./components/fire-events.js) | [`Enzyme`](./tests/fire-events/fire-events.enzyme.test.js) | [`RTL](./tests/fire-events/fire-events.rtl.test.js)]
+#### :heavy_check_mark: Fire events [[`Implementation`](./components/fire-events.js) | [`Enzyme`](./tests/fire-events/fire-events.enzyme.test.js) | [`RTL`](./tests/fire-events/fire-events.rtl.test.js)]
 
-#### :heavy_check_mark: Conditionals [[`Implementation`](./components/conditionals.js) | [`Enzyme`](./tests/conditionals/conditionals.enzyme.test.js) | [`RTL`](./tests/conditionals/conditionals.rtltest.js)]
+#### :heavy_check_mark: Conditionals [[`Implementation`](./components/conditionals.js) | [`Enzyme`](./tests/conditionals/conditionals.enzyme.test.js) | [`RTL`](./tests/conditionals/conditionals.rtl.test.js)]
 
-#### :heavy_check_mark: Components wrapped inside HOC(s) [[`Implementation`](./components/wrapped.js) | [`Enzyme`](./tests/wrapped/wrapped.enzyme.test.js) | [`RTL`](./tests/asynchronous/asynchronous.rtl.test.js)]
+#### :heavy_check_mark: Components wrapped inside HOC(s) [[`Implementation`](./components/wrapped.js) | [`Enzyme`](./tests/wrapped/wrapped.enzyme.test.js) | [`RTL`](./tests/wrapped/wrapped.rtl.test.js)]
 
 #### :heavy_check_mark: Asynchronous events [[`Implementation`](./components/asynchronous.js) | [`Enzyme`](./tests/asynchronous/asynchronous.enzyme.test.js) | [`RTL`](./tests/asynchronous/asynchronous.rtl.test.js)]
 

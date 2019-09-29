@@ -8,9 +8,9 @@ describe("These test suite(s) is/are designed to demonstrate how wrapped compone
 
     // Shallow rendering would fail in this case, because merely the exterior surface of the HOC is rendered, nor the wrapped component.
     // Full DOM rendering passes, but renders the whole tree.
-    // Shallow rendering is possible if the component is accessed one level deeper, however, it would definitely fail if more than one HOC is applied to the component.
 
     it("renders a <h1 />", () => {
+        // Shallow rendering is possible if the component is accessed one level deeper, however, it would definitely fail if more than one HOC is applied to the component.
         const wrappedFooWrapper = shallowWrappedComponent(<WrappedFoo />);
 
         expect(wrappedFooWrapper.find("h1")).toHaveLength(1);

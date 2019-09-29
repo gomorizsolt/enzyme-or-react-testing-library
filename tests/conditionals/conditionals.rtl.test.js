@@ -5,7 +5,7 @@ import ConditionalsFoo from "../../components/conditionals";
 afterEach(cleanup);
 
 describe("These test suite(s) is/are desiged to demonstrate how conditionally rendered texts can be tested", () => {
-    describe("when count is not even", () => {
+    describe("when `count` is not even", () => {
         it("displays `Odd`", () => {
             const { getByText } = render(<ConditionalsFoo />);
 
@@ -15,7 +15,7 @@ describe("These test suite(s) is/are desiged to demonstrate how conditionally re
         });
     });
 
-    describe("when count is even", () => {
+    describe("when `count` is even", () => {
         it("displays `Even`", () => {
             const { getByText } = render(<ConditionalsFoo />);
 
