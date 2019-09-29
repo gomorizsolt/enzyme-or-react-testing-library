@@ -12,7 +12,6 @@ describe("These test suites are designed to trigger events on the DOM", () => {
 
         const input = getByPlaceholderText(/email/i);
 
-        // https://testing-library.com/docs/dom-testing-library/api-events
         fireEvent.change(input, { target: { value: inputValue }});
 
         expect(input.value).toEqual(inputValue);

@@ -5,7 +5,7 @@ import FindElementsFoo from "../../components/find-elements";
 // https://testing-library.com/docs/react-testing-library/api#cleanup
 afterEach(cleanup);
 
-describe("These test suites are designed to demonstrate a few methods to access certain elements in the DOM", () => {
+describe("These test suite(s) are designed to demonstrate a few methods to access certain elements in the DOM", () => {
     it("getByLabelText", () => {
         // https://testing-library.com/docs/dom-testing-library/api-queries#bylabeltext
         const { getByLabelText } = render(<FindElementsFoo />);
