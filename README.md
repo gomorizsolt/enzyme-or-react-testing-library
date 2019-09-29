@@ -33,7 +33,7 @@ Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js)
 
 #### :heavy_check_mark: Asynchronous events [[`implementation`](./components/asynchronous.js) | [`enzyme`](./tests/asynchronous/asynchronous.enzyme.test.js) | [`react-testing-library`](./tests/asynchronous/asynchronous.react-testing-library.test.js)]
 
-- :heavy_check_mark: [Hooks](./tests/hooks.test.js)
+#### :heavy_check_mark: Hooks [[`implementation`](./components/hooks.js) | [`enzyme`](./tests/hooks/hooks.enzyme.test.js) | [`react-testing-library`](./tests/hooks/hooks.react-testing-library.test.js)]
 
 ## Resources
 

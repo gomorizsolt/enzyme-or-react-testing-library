@@ -4,7 +4,7 @@ import AsynchronousFoo from "../../components/asynchronous";
 
 afterEach(cleanup);
 
-describe("", () => {
+describe("These test suite(s) is/are designed to demonstrate how async events(timeouts) can be tested", () => {
     describe("increaseSync", () => {
         it("increaces `count` by one", () => {
             const { getByText, getByTestId } = render(<AsynchronousFoo />);
