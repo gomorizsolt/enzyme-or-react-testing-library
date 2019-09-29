@@ -23,17 +23,17 @@ Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js)
 
 ## Elements
 
-#### :heavy_check_mark: Find elements [[`implementation`](./components/find-elements.js) | [`enzyme`](./tests/find-elements/find-elements.enzyme.test.js) | [`react-testing-library`](./tests/find-elements/find-elements.react-testing-library.test.js)]
+#### :heavy_check_mark: Find elements [[`Implementation`](./components/find-elements.js) | [`Enzyme`](./tests/find-elements/find-elements.enzyme.test.js) | [`RTL`](./tests/find-elements/find-elements.rtl.test.js)]
 
-#### :heavy_check_mark: Fire events [[`implementation`](./components/fire-events.js) | [`enzyme`](./tests/fire-events/fire-events.enzyme.test.js) | [`react-testing-library`](./tests/fire-events/fire-events.react-testing-library.test.js)]
+#### :heavy_check_mark: Fire events [[`Implementation`](./components/fire-events.js) | [`Enzyme`](./tests/fire-events/fire-events.enzyme.test.js) | [`RTL](./tests/fire-events/fire-events.rtl.test.js)]
 
-#### :heavy_check_mark: Conditionals [[`implementation`](./components/conditionals.js) | [`enzyme`](./tests/conditionals/conditionals.enzyme.test.js) | [`react-testing-library`](./tests/conditionals/conditionals.react-testing-library.test.js)]
+#### :heavy_check_mark: Conditionals [[`Implementation`](./components/conditionals.js) | [`Enzyme`](./tests/conditionals/conditionals.enzyme.test.js) | [`RTL`](./tests/conditionals/conditionals.rtltest.js)]
 
-#### :heavy_check_mark: Components wrapped inside HOC(s) [[`implementation`](./components/wrapped.js) | [`enzyme`](./tests/wrapped/wrapped.enzyme.test.js) | [`react-testing-library`](./tests/asynchronous/asynchronous.react-testing-library.test.js)]
+#### :heavy_check_mark: Components wrapped inside HOC(s) [[`Implementation`](./components/wrapped.js) | [`Enzyme`](./tests/wrapped/wrapped.enzyme.test.js) | [`RTL`](./tests/asynchronous/asynchronous.rtl.test.js)]
 
-#### :heavy_check_mark: Asynchronous events [[`implementation`](./components/asynchronous.js) | [`enzyme`](./tests/asynchronous/asynchronous.enzyme.test.js) | [`react-testing-library`](./tests/asynchronous/asynchronous.react-testing-library.test.js)]
+#### :heavy_check_mark: Asynchronous events [[`Implementation`](./components/asynchronous.js) | [`Enzyme`](./tests/asynchronous/asynchronous.enzyme.test.js) | [`RTL`](./tests/asynchronous/asynchronous.rtl.test.js)]
 
-#### :heavy_check_mark: Hooks [[`implementation`](./components/hooks.js) | [`enzyme`](./tests/hooks/hooks.enzyme.test.js) | [`react-testing-library`](./tests/hooks/hooks.react-testing-library.test.js)]
+#### :heavy_check_mark: Hooks [[`Implementation`](./components/hooks.js) | [`Enzyme`](./tests/hooks/hooks.enzyme.test.js) | [`RTL`](./tests/hooks/hooks.rtl.test.js)]
 
 ## Resources
 
