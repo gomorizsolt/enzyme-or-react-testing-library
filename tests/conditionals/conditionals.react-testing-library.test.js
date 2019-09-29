@@ -1,35 +1,27 @@
 import React from "react";
-import { render, cleanup, waitForElement } from "@testing-library/react";
-import axiosMock from "axios";
+import { render, fireEvent, cleanup } from "@testing-library/react";
 import ConditionalsFoo from "../../components/conditionals";
 
 afterEach(cleanup);
 
-describe("These test suites are designed to demonstrate how conditonals with async events can be tested", () => {
-    describe("when the asynv event is not fulfilled", () => {
-        it("indicates the loading state with text", () => {
-            const { getByTestId } = render(<ConditionalsFoo />);
+describe("These test suites are desiged to demonstrate how conditionally rendered texts can be tested", () => {
+    describe("when count is not even", () => {
+        it("displays `Odd`", () => {
+            const { getByText } = render(<ConditionalsFoo />);
 
-            expect(getByTestId("loading")).toHaveTextContent("Loading data...");
+            fireEvent.click(getByText(/increment/i));
+
+            expect(getByText("Odd")).toBeInTheDocument();
         });
     });
 
-    describe("when the async event is fulfilled", () => {
-        it("renders the stringified todo to the screen", async () => {
-            const todo = {
-                userId: 1,
-                id: 1,
-                title: "delectus aut autem",
-                completed: false
-            };
+    describe("when count is even", () => {
+        it("displays `Even`", () => {
+            const { getByText } = render(<ConditionalsFoo />);
 
-            axiosMock.get.mockResolvedValueOnce(todo);
+            fireEvent.doubleClick(getByText(/increment/i));
 
-            const { getByTestId } = render(<ConditionalsFoo />);
-
-            const displayer = await waitForElement(() => getByTestId("displayer"));
-
-            expect(displayer).toHaveTextContent(JSON.stringify(todo));
+            expect(getByText("Even")).toBeInTheDocument();
         });
     });
 });

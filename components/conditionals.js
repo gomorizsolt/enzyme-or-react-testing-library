@@ -1,43 +1,12 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 
-const conditionalsFoo = () => {
-    const defaultState = {
-        data: null,
-        isLoading: true,
-    };
-
-    const [state, setState] = useState({
-        ...defaultState
-    })
-
-    const fetchTodos = async () => {
-        return axios.get("https://jsonplaceholder.typicode.com/todos/1")
-            .then(fetchedTodos => {
-                setState({
-                    ...defaultState,
-                    data: fetchedTodos,
-                    isLoading: false,
-                });
-            }).catch(() => {
-                setState({
-                    ...defaultState,
-                    isLoadig: false,
-                });
-            });
-    };
-
-    useEffect(() => {
-        fetchTodos();
-    }, []);
-
-    if (state.isLoading) {
-        return <div data-testid="loading">Loading data...</div>;
-    }
+export default () => {
+    const [count, setCount] = useState(0);
 
     return (
-        <div data-testid="displayer">{JSON.stringify(state.data)}</div>
+        <div>
+            <p>{count % 2 === 0 ? "Even" : "Odd"}</p>
+            <button type="button" onClick={() => setCount(prevCount => prevCount + 1)}>Increment</button>
+        </div>
     );
 };
-
-export default conditionalsFoo;

@@ -1,32 +1,25 @@
 import React from "react";
-import { mount } from "enzyme";
-import axiosMock from "axios";
+import { shallow } from "enzyme";
 import ConditionalsFoo from "../../components/conditionals";
 
-describe("These test suites are designed to demonstrate how conditonals with async events can be tested", () => {
-   describe("when the async event is not fulfilled", () => {
-        it("indicates the loading state with text", () => {
-            // Shallow does not trigger the useEffect hook.
-            const conditionalFooWrapper = mount(<ConditionalsFoo />);
+describe("These test suites are desiged to demonstrate how conditionally rendered texts can be tested", () => {
+    describe("when count is not even", () => {
+        it("displays `Odd`", () => {
+            const conditionalsFooWrapper = shallow(<ConditionalsFoo />);
 
-            expect(conditionalFooWrapper.find("div").text()).toEqual("Loading data...");
+            conditionalsFooWrapper.find("button").simulate("click");
+
+            expect(conditionalsFooWrapper.find("p").text()).toEqual("Odd");
         });
     });
 
-    describe("when the async event is fulfilled", () => {
-        it("renders the stringified todo to the screen", async () => {
-            const todo = {
-                userId: 1,
-                id: 1,
-                title: "delectus aut autem",
-                completed: false
-            };
+    describe("when count is even", () => {
+        it("displays `Even`", () => {
+            const conditionalsFooWrapper = shallow(<ConditionalsFoo />);
 
-            axiosMock.get.mockResolvedValueOnce(todo);
+            conditionalsFooWrapper.find("button").simulate("doubleclick");
 
-            const conditionalFooWrapper = await mount(<ConditionalsFoo />);
-
-            expect(conditionalFooWrapper.find("div").text()).toEqual(JSON.stringify(todo));
+            expect(conditionalsFooWrapper.find("p").text()).toEqual("Even");
         });
     });
 });

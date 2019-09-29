@@ -29,6 +29,8 @@ Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js)
 
 #### :heavy_check_mark: Conditionals [[`implementation`](./components/conditionals.js) | [`enzyme`](./tests/conditionals/conditionals.enzyme.test.js) | [`react-testing-library`](./tests/conditionals/conditionals.react-testing-library.test.js)]
 
+#### :heavy_check_mark: Components wrapped inside HOC(s) [[`implementation`]() | [`enzyme`]() | [`react-testing-library`]()]
+
 - :heavy_check_mark: [Components wrapped inside HOC(s)](./tests/wrapped.test.js)
 - :heavy_check_mark: [Asynchronous events](./tests/asynchronous.test.js)
 - :heavy_check_mark: [Hooks](./tests/hooks.test.js)
