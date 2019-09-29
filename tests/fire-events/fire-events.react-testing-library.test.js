@@ -4,7 +4,7 @@ import FireEventsFoo from "../../components/fire-events";
 
 afterEach(cleanup);
 
-describe("These test suites are designed to trigger events on the DOM", () => {
+describe("These test suites is/are designed to trigger events on the DOM", () => {
     const inputValue = "john.doe@xyz.com";
 
     it("changes <input /> value", () => {

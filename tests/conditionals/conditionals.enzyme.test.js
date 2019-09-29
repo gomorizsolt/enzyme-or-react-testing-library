@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import ConditionalsFoo from "../../components/conditionals";
 
-describe("These test suite(s) are desiged to demonstrate how conditionally rendered texts can be tested", () => {
+describe("These test suite(s) is/are desiged to demonstrate how conditionally rendered texts can be tested", () => {
     describe("when count is not even", () => {
         it("displays `Odd`", () => {
             const conditionalsFooWrapper = shallow(<ConditionalsFoo />);

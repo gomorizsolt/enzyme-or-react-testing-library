@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import WrappedFoo from "../../components/wrapped";
 
-describe("These test suite(s) are designed to demonstrate how wrapped components can be tested", () => {
+describe("These test suite(s) is/are designed to demonstrate how wrapped components can be tested", () => {
     const shallowWrappedComponent = wrappedComponent =>
     shallow(shallow(wrappedComponent).get(0));
 

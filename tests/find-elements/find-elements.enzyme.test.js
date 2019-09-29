@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import FindElementsFoo from "../../components/find-elements";
 
-describe("These test suite(s) are designed to demonstrate a few ways to access certain elements in a shallow() rendered component", () => {
+describe("These test suite(s) is/are designed to demonstrate a few ways to access certain elements in a shallow() rendered component", () => {
     it("find", () => {
         const findElementsFooWrapper = shallow(<FindElementsFoo />);
 
