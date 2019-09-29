@@ -41,3 +41,11 @@ See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) i
 - [LevelUpTuts, YouTube - What Is React Testing Library?](https://www.youtube.com/watch?v=JKOwJUM4_RM)
 - [Kent C. Dodds, YouTube - Test Driven Development with react-testing-library](https://www.youtube.com/watch?v=kCR3JAR7CHE)
 - [Leigh Halliday, YouTube - Testing React](https://www.youtube.com/playlist?list=PL8fumNHsC-3NaPNxh2bous6bBDWwJ4r1-)
+
+## Contribution
+
+Contributors are welcome and also expected to adhere to the [**Contributor Covenant**](https://www.contributor-covenant.org/).
+
+## License
+
+The project is under the MIT license. For more information read the [**LICENSE.md**](./LICENSE.md) file.
