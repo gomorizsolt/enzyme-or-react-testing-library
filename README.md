@@ -1,14 +1,3 @@
-Hey!
-
-I'm not sure if anybody would be interested in such projects, but I have always had a strong keen to point out/show off the discrepancies of libraries.
-
-It's been confusing to me for a long time to understend to what extend Enzyme differs from react-testing-library. Thereby, I have decided to put the most ubiquitous React testing libraries under scrunity. Even though the project is under construction, IMO it's reached the state to be publicly demonstrated and also gather feedbacks from developers.
-
-I'm planning on describing my observations explicitly, as well as adding more tests scenarios.
-
-So, without further ado, here's the project:
-- https://github.com/gomorizsolt/enzyme-vs-rtl
-
 # [enzyme](https://github.com/airbnb/enzyme) || [react-testing-library](https://github.com/testing-library/react-testing-library)
 
 The repository is designed to compare the idiosyncrasies of most ubiquitous React unit-testing libraries.
