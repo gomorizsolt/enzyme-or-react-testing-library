@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const hooksFoo = () => {
+export default () => {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
@@ -16,5 +16,3 @@ const hooksFoo = () => {
         </div>
     );
 };
-
-export default hooksFoo;

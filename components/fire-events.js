@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const fireEventsFoo = props => {
+export default props => {
     const [value, setValue] = useState("");
 
     return (
@@ -10,5 +10,3 @@ const fireEventsFoo = props => {
         </div>
     );
 };
-
-export default fireEventsFoo;

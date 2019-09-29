@@ -1,6 +1,6 @@
 import React from "react";
 
-const findElementsFoo = () => (
+export default () => (
     <div>
         <label htmlFor="username" data-testid="username-label">Username</label>
         <input id="username" type="text" placeholder="Username" />
@@ -9,5 +9,3 @@ const findElementsFoo = () => (
         <button type="submit">Login</button>
     </div>
 );
-
-export default findElementsFoo;

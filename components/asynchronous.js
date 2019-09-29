@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const asynchronousFoo = () => {
+export default () => {
     const [count, setCount] = useState(0);
 
     const increaseSync = () => setCount(prevCount => prevCount + 1);
@@ -29,5 +29,3 @@ const asynchronousFoo = () => {
         </div>
     );
 };
-
-export default asynchronousFoo;
