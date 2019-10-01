@@ -34,6 +34,10 @@ See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) i
 
 #### :heavy_check_mark: Hooks [[`Implementation`](./components/hooks.js) | [`Enzyme`](./tests/hooks/hooks.enzyme.test.js) | [`RTL`](./tests/hooks/hooks.rtl.test.js)]
 
+## Contributors
+
+- [@skyboyer007, Reddit - Use `dive()` to access wrapped components](https://www.reddit.com/r/reactjs/comments/dbsf57/enzyme_reacttestinglibrary/f241kbb?utm_source=share&utm_medium=web2x)
+
 ## Resources
 
 - [David Boyne, Medium - My experience moving from Enzyme to react-testing-library](https://medium.com/@boyney123/my-experience-moving-from-enzyme-to-react-testing-library-5ac65d992ce)
