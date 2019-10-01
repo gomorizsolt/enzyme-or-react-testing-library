@@ -36,7 +36,7 @@ See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) i
 
 ## Contributors
 
-- [**@skyboyer007, Reddit**](https://www.reddit.com/r/reactjs/comments/dbsf57/enzyme_reacttestinglibrary/f241kbb?utm_source=share&utm_medium=web2x) - Use `dive()` to access wrapped components]()
+- [**@skyboyer007, Reddit**](https://www.reddit.com/r/reactjs/comments/dbsf57/enzyme_reacttestinglibrary/f241kbb?utm_source=share&utm_medium=web2x) - Use [`dive()`](https://airbnb.io/enzyme/docs/api/ShallowWrapper/dive.html) to access wrapped components
 
 ## Resources
 
