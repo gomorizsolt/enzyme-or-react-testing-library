@@ -18,7 +18,7 @@ Check out the [configs](./configs) folder and [jest.config.js](./jest.config.js)
 
 It is worthwile to mention that `RTL` can be used out of the box without requiring a separate config file, whereas `Enzyme` needs an adapter which should be in line with React.
 
-See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) in case you want your tests to be more explicit and readable. It greatly enchances Jest's expectors other than the default ones.
+See [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) in case you want your tests to be more explicit and readable. It greatly enchances Jest's expectors.
 
 ## Elements
 
